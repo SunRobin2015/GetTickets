@@ -53,6 +53,7 @@ namespace GetTickets
                     {
                         if (flight.Price <= 1300)
                         {
+                            System.Media.SystemSounds.Beep.Play();
                             MessageBox.Show("The ticket is coming!!!");
                         }
                         Console.WriteLine(flight.Name + Resources.WebUtil_GetResponse____ + flight.Price);
